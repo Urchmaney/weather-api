@@ -1,7 +1,7 @@
-const getUrl = async (url) => {
+async function getUrl(url) {
   const apiData = await fetch(url, { mode: 'cors' }).then((data) => data.json());
   return apiData;
-};
+}
 
 const getWeatherData = (data) => {
   const { main: { temp } } = data;

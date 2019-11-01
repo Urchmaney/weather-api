@@ -1,3 +1,3 @@
-import generateForm from './view';
+import form from './view';
 
-document.addEventListener('load', generateForm());
+document.addEventListener('load', form());
