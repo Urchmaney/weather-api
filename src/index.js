@@ -1,4 +1,4 @@
-import { generateForm } from './view';
+import generateForm from './view';
 
 
 document.addEventListener('load', generateForm());

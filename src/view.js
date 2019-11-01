@@ -4,7 +4,6 @@ import {
   QueryGiphyData,
   getImagesData,
   toFarienheit,
-  toCelcius,
 } from './api';
 import './style.css';
 
@@ -67,6 +66,4 @@ const generateForm = () => {
   content.appendChild(imageContainer);
 };
 
-export {
-  generateForm,
-};
+export default generateForm;
