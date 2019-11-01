@@ -1,3 +1,4 @@
+
 async function getUrl(url) {
   const apiData = await fetch(url, { mode: 'cors' }).then((data) => data.json());
   return apiData;
