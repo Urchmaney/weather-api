@@ -1,8 +1,8 @@
 
-async function getUrl(url) {
+const getUrl = async (url) => {
   const apiData = await fetch(url, { mode: 'cors' }).then(data => data.json());
   return apiData;
-}
+};
 
 const getWeatherData = (data) => {
   const { main: { temp } } = data;
@@ -14,7 +14,7 @@ const getImagesData = (data) => {
   return images.downsized_large;
 };
 
-async function QueryWetherData(location) {
+const QueryWetherData = async (location) => {
   const key = 'c9d3e08c21247de4a65d75f77fbf5223';
   const weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?';
   if (location) {
@@ -22,14 +22,15 @@ async function QueryWetherData(location) {
     const data = await getUrl(fullUrl);
     return data;
   }
-}
+  return {};
+};
 
-async function QueryGiphyData(state) {
+const QueryGiphyData = async (state) => {
   const key = '1YkfvdVZ56eGwBGwpnjd9Xc5Gq5hwTZP';
   const url = `https://api.giphy.com/v1/gifs/translate?api_key=${key}&s=${state}`;
   const data = await getUrl(url);
   return data;
-}
+};
 
 const toFarienheit = (celcius) => {
   const temp = (celcius * 9) / 5;
