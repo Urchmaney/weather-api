@@ -10,4 +10,4 @@ Used:
 
 ## Authors
 - Kingsley Uche [https://github.com/Urchmaney]
-[Live Link]()
+- [Live Link](https://raw.githack.com/Urchmaney/weather-api/weather/dist/index.html)
